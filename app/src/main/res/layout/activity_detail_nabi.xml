@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailNabi">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="197dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bismillah" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="365dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            app:cardCornerRadius="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_detailnabi"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.482"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="89dp"
+                    android:layout_height="64dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/quran" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="28dp"
+                    android:fontFamily="@font/futura_medium_bt"
+                    android:text="Kisah Tentang :"
+                    android:textColor="#182142"
+                    android:textSize="23sp"
+                    app:layout_constraintStart_toEndOf="@+id/img_detailnabi"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/futura_light_bt"
+                    android:text="Nabi"
+                    android:textColor="#182142"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView4"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <TextView
+                    android:id="@+id/txt_detailnamanabi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/futura_light_bt"
+                    android:text="Muhammad"
+                    android:textColor="#182142"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView5"
+                    app:layout_constraintStart_toEndOf="@+id/textView5"
+                    app:layout_constraintTop_toTopOf="@+id/textView5" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/futura_medium_bt"
+            android:text="Tempat Kelahiran :"
+            android:textColor="#182142"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/cardView"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/futura_medium_bt"
+            android:text="Usia :"
+            android:textColor="#182142"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_detailtpkelahirannabi"
+            app:layout_constraintStart_toStartOf="@+id/txt_detailtpkelahirannabi"
+            app:layout_constraintTop_toBottomOf="@+id/txt_detailtpkelahirannabi" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/futura_medium_bt"
+            android:text="Tinggal Di :"
+            android:textColor="#182142"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_detailusianabi"
+            app:layout_constraintStart_toStartOf="@+id/txt_detailusianabi"
+            app:layout_constraintTop_toBottomOf="@+id/txt_detailusianabi" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/futura_medium_bt"
+            android:text="Kisah :"
+            android:textColor="#182142"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/txt_detailtptinggalnabi"
+            app:layout_constraintStart_toStartOf="@+id/txt_detailtptinggalnabi"
+            app:layout_constraintTop_toBottomOf="@+id/txt_detailtptinggalnabi" />
+
+        <TextView
+            android:id="@+id/txt_detailtpkelahirannabi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/futura_light_bt"
+            android:text="Makkah"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView7"
+            app:layout_constraintStart_toStartOf="@+id/textView7"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/txt_detailusianabi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/futura_light_bt"
+            android:text="63 Tahun"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView9"
+            app:layout_constraintStart_toStartOf="@+id/textView9"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+        <TextView
+            android:id="@+id/txt_detailtptinggalnabi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/futura_light_bt"
+            android:text="Madinah"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/txt_detailkisahnabi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/futura_light_bt"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi tempus imperdiet nulla malesuada pellentesque elit eget. Libero justo laoreet sit amet cursus sit. Tincidunt augue interdum velit euismod. Nibh tortor id aliquet lectus proin nibh nisl condimentum id. Feugiat in ante metus dictum at tempor commodo. Aliquam vestibulum morbi blandit cursus risus at. Felis eget nunc lobortis mattis aliquam faucibus. Blandit turpis cursus in hac habitasse platea. Pretium quam vulputate dignissim suspendisse in est ante. Semper auctor neque vitae tempus quam pellentesque nec. Amet commodo nulla facilisi nullam vehicula. Et malesuada fames ac turpis egestas integer eget. Scelerisque eu ultrices vitae auctor eu. Tellus in hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Vel risus commodo viverra maecenas accumsan. Diam maecenas sed enim ut sem viverra. Amet aliquam id diam maecenas ultricies mi eget mauris pharetra. Viverra aliquet eget sit amet tellus cras adipiscing enim.  Quisque non tellus orci ac auctor augue mauris augue. Gravida cum sociis natoque penatibus. Elit pellentesque habitant morbi tristique senectus et netus et. Sed arcu non odio euismod lacinia at. Eu facilisis sed odio morbi quis. Aliquet bibendum enim facilisis gravida neque. Eu sem integer vitae justo. Leo integer malesuada nunc vel risus commodo. Consectetur libero id faucibus nisl tincidunt eget. Interdum varius sit amet mattis. Enim tortor at auctor urna nunc.  Duis tristique sollicitudin nibh sit amet commodo nulla. Sed blandit libero volutpat sed cras ornare. Odio ut enim blandit volutpat maecenas volutpat. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Ipsum consequat nisl vel pretium lectus quam id leo in. Tristique nulla aliquet enim tortor at auctor urna. Scelerisque varius morbi enim nunc faucibus a. Nunc vel risus commodo viverra maecenas accumsan lacus vel. Facilisis gravida neque convallis a cras semper auctor neque vitae. Non tellus orci ac auctor augue mauris. Non pulvinar neque laoreet suspendisse interdum consectetur libero id faucibus. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Vulputate odio ut enim blandit. Pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper. Ultricies integer quis auctor elit sed vulputate. Sed egestas egestas fringilla phasellus faucibus. Sem nulla pharetra diam sit amet. At tellus at urna condimentum mattis pellentesque id nibh. Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Augue ut lectus arcu bibendum at varius vel pharetra vel.  Scelerisque in dictum non consectetur a erat nam at. Urna id volutpat lacus laoreet. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu. Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. In massa tempor nec feugiat nisl pretium fusce id velit. Nibh praesent tristique magna sit amet purus gravida quis. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Non blandit massa enim nec dui nunc mattis enim. Elit pellentesque habitant morbi tristique senectus et netus et malesuada. Et pharetra pharetra massa massa ultricies. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Aliquet lectus proin nibh nisl condimentum. Imperdiet dui accumsan sit amet nulla.  Feugiat nisl pretium fusce id velit ut tortor pretium. Dis parturient montes nascetur ridiculus mus. Donec ultrices tincidunt arcu non sodales neque. Id leo in vitae turpis. Mattis aliquam faucibus purus in massa tempor. Est placerat in egestas erat imperdiet sed. Vulputate enim nulla aliquet porttitor lacus. Rhoncus mattis rhoncus urna neque. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Scelerisque varius morbi enim nunc. Integer vitae justo eget magna fermentum iaculis. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis. Nulla aliquet porttitor lacus luctus accumsan. Porttitor massa id neque aliquam. Ipsum consequat nisl vel pretium. In hac habitasse platea dictumst vestibulum rhoncus. Porta non pulvinar neque laoreet suspendisse interdum consectetur.  Tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce. Tincidunt vitae semper quis lectus nulla at volutpat. Elementum tempus egestas sed sed risus pretium quam vulputate. At auctor urna nunc id cursus metus aliquam. Convallis aenean et tortor at risus. Venenatis cras sed felis eget velit aliquet sagittis id consectetur. Faucibus nisl tincidunt eget nullam. Ullamcorper a lacus vestibulum sed. Ullamcorper sit amet risus nullam eget felis eget nunc lobortis. Maecenas ultricies mi eget mauris pharetra et ultrices.  Non curabitur gravida arcu ac tortor dignissim convallis. Lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor. Sit amet mattis vulputate enim. Lacinia at quis risus sed vulputate. Et netus et malesuada fames ac. Sed faucibus turpis in eu mi bibendum neque. Elit ullamcorper dignissim cras tincidunt lobortis feugiat. Egestas purus viverra accumsan in nisl nisi scelerisque. Non arcu risus quis varius. Nulla aliquet porttitor lacus luctus accumsan. Gravida quis blandit turpis cursus in. Porta non pulvinar neque laoreet suspendisse. Commodo viverra maecenas accumsan lacus. Eu feugiat pretium nibh ipsum consequat nisl vel. Fermentum posuere urna nec tincidunt praesent semper. In nibh mauris cursus mattis molestie a iaculis at. Donec adipiscing tristique risus nec feugiat in fermentum posuere urna. Hac habitasse platea dictumst vestibulum. Cursus vitae congue mauris rhoncus aenean.  Elit scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Bibendum ut tristique et egestas quis ipsum. Iaculis eu non diam phasellus vestibulum lorem sed. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Adipiscing bibendum est ultricies integer quis auctor elit sed. Diam volutpat commodo sed egestas egestas fringilla. Euismod lacinia at quis risus sed vulputate odio. Turpis massa sed elementum tempus egestas sed sed. Ultricies lacus sed turpis tincidunt id aliquet risus. Viverra adipiscing at in tellus integer feugiat scelerisque. Etiam tempor orci eu lobortis elementum nibh tellus molestie nunc. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae. Nisl pretium fusce id velit ut tortor pretium. Scelerisque mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Viverra aliquet eget sit amet tellus.  Ac ut consequat semper viverra. Pretium fusce id velit ut tortor pretium viverra suspendisse. Mauris vitae ultricies leo integer. Nibh sed pulvinar proin gravida. At auctor urna nunc id cursus metus aliquam eleifend. Condimentum vitae sapien pellentesque habitant morbi tristique. Integer enim neque volutpat ac tincidunt vitae semper. Ipsum suspendisse ultrices gravida dictum fusce ut. Ac turpis egestas integer eget aliquet nibh praesent tristique magna. Molestie nunc non blandit massa enim nec dui nunc. Elementum eu facilisis sed odio morbi. Arcu felis bibendum ut tristique et. Ac turpis egestas integer eget aliquet nibh praesent. Eros donec ac odio tempor orci.  Vestibulum sed arcu non odio. Turpis cursus in hac habitasse platea dictumst quisque sagittis. Aliquet porttitor lacus luctus accumsan tortor posuere ac ut. Nisl purus in mollis nunc sed id semper risus in. Viverra adipiscing at in tellus integer feugiat. Feugiat in ante metus dictum at tempor commodo ullamcorper. Dui faucibus in ornare quam viverra orci sagittis eu. Diam maecenas sed enim ut sem viverra aliquet. Quisque egestas diam in arcu cursus euismod quis viverra. Amet mattis vulputate enim nulla aliquet. Et magnis dis parturient montes nascetur ridiculus. Ultrices gravida dictum fusce ut placerat orci nulla. Eu ultrices vitae auctor eu. Volutpat odio facilisis mauris sit amet massa vitae tortor. In cursus turpis massa tincidunt dui. Enim facilisis gravida neque convallis a cras semper auctor. Diam maecenas sed enim ut sem viverra aliquet. Pharetra convallis posuere morbi leo urna molestie at. Id velit ut tortor pretium viverra suspendisse potenti nullam."
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ImageView
+            android:id="@+id/ic_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="@+id/imageView4"
+            app:srcCompat="@drawable/ic_back" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
